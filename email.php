@@ -5,6 +5,11 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 require_once "vendor/autoload.php";
+//parameters from the html
+$toEmail=$_POST['toEmail'];
+$subject=$_POST['subject'];
+$body=$_POST['message'];
+
 
 $mail = new PHPMailer(true);
 
@@ -27,13 +32,13 @@ $mail->Port = 587;
 $mail->From = "coderykdromar@outlook.com";
 $mail->FromName = "Yash Kumar Dromar";
 
-$mail->addAddress("ykdromarpro@gmail.com", "YK");
+$mail->addAddress($toEmail);
 
 $mail->isHTML(true);
 
-$mail->Subject = "Subject Text";
-$mail->Body = "<i>Mail body in HTML</i>";
-$mail->AltBody = "This is the plain text version of the email content";
+$mail->Subject = $subject;
+$mail->Body = $body;
+// $mail->AltBody = "This is the plain text version of the email content";
 
 try {
     $mail->send();

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Email</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="email">
+      <form action="email.php" method="POST">
+        <div class="input">
+          <label>To</label><br />
+          <input type="email" name="toEmail" placeholder="To Email" />
+        </div>
+        <div class="input">
+          <label>Subject</label><br />
+          <input type="text" name="subject" placeholder="Subject" />
+        </div>
+        <div class="input">
+          <label>Message</label><br />
+          <textarea type="text" name="message" placeholder="Message"></textarea>
+        </div>
+        <div class="input">
+          <!-- <label>Message</label><br /> -->
+          <button type="submit" name="submit-btn">Send</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
