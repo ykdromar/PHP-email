@@ -1,5 +1,5 @@
 body {
-  background-image: url("/static/sent.jpg");
+  background-image: url("static/sent.jpg");
   background-attachment: fixed;
   background-size: contain;
   background-repeat: no-repeat;
