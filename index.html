@@ -1,29 +1,118 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Email</title>
+    <title>PHP Email</title>
+    <meta
+      name="viewport"
+      content="width-device-width,
+initial-scale=1,minimum-scale=1"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favi2.png" />
   </head>
   <body>
-    <div id="email">
+    <div id="outer-div">
+      <h3 id="heading">PHP Email App</h3>
       <form action="email.php" method="POST">
-        <div class="input">
-          <label>To</label><br />
-          <input type="email" name="toEmail" placeholder="To Email" />
-        </div>
-        <div class="input">
-          <label>Subject</label><br />
-          <input type="text" name="subject" placeholder="Subject" />
-        </div>
-        <div class="input">
-          <label>Message</label><br />
-          <textarea type="text" name="message" placeholder="Message"></textarea>
-        </div>
-        <div class="input">
-          <!-- <label>Message</label><br /> -->
-          <button type="submit" name="submit-btn">Send</button>
+        <div id="inner-div">
+          <div id="from" class="subdivs">
+            <div id="server" class="input radio">
+              <p>Select your mail server</p>
+              <!-- <label
+                for="gmail"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-title="Tooltip on top"
+                >Gmail</label
+              >
+              <input
+                type="radio"
+                name="server"
+                value="smtp.gmail.com"
+                id="gmail"
+              /> -->
+
+              <label for="outlook">Outlook</label>
+              <input
+                type="radio"
+                name="server"
+                value="smtp.office365.com"
+                id="outlook"
+              />
+              <hr />
+            </div>
+            <div class="input">
+              <lable for="fromEmail">Your Email</lable><br />
+              <input
+                type="email"
+                name="fromEmail"
+                id="fromEmail"
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="input">
+              <lable for="password">Password</lable><br />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Email password"
+              />
+            </div>
+          </div>
+          <div id="to" class="subdivs">
+            <div class="input">
+              <label for="toEmail">To</label><br />
+              <input
+                type="email"
+                name="toEmail"
+                placeholder="To Email"
+                id="toEmail"
+              />
+            </div>
+            <div class="input">
+              <label for="subject">Subject</label><br />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                id="subject"
+              />
+            </div>
+            <div class="input">
+              <label for="message">Body</label><br />
+              <textarea
+                type="text"
+                name="message"
+                placeholder="Message"
+                id="message"
+              ></textarea>
+            </div>
+            <div class="input">
+              <!-- <label for="">Message</label><br /> -->
+              <button type="submit" name="submit-btn">Send</button>
+            </div>
+          </div>
         </div>
       </form>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
