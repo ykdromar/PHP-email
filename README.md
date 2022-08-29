@@ -10,8 +10,14 @@ Here are few Images of the App.
 
 <img src="https://github.com/ykdromar/PHP-email/blob/master/appDisplayImg/di1.png" width="1000" />
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 <img src="https://github.com/ykdromar/PHP-email/blob/master/appDisplayImg/di2.png" width="1000" />
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 <img src="https://github.com/ykdromar/PHP-email/blob/master/appDisplayImg/di3.png" width="1000" />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <img src="https://github.com/ykdromar/PHP-email/blob/master/appDisplayImg/di4.png" width="1000" />
