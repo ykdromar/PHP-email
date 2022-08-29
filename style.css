@@ -6,7 +6,7 @@ body {
     rgba(10, 185, 123, 0.9)
   ); */
   color: rgb(56, 90, 100);
-  background-image: url("bg.jpg");
+  background-image: url("/static/bg.jpg");
 
   background-attachment: fixed;
   background-repeat: no-repeat;
