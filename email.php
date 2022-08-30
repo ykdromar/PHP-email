@@ -14,7 +14,7 @@ $body=$_POST['message'];
 
 $fromEmail=$_POST['fromEmail'];
 $password=$_POST['password'];
-$server=$_POST['server'];
+// $server=$_POST['server'];
 
 
 
@@ -24,7 +24,7 @@ $mail->SMTPDebug = 0;
 //Set PHPMailer to use SMTP.
 $mail->isSMTP();            
 //Set SMTP host name                          
-$mail->Host =$server;
+$mail->Host ="smtp.office365.com";
 //Set this to true if SMTP host requires authentication to send email
 $mail->SMTPAuth = true;                          
 //Provide username and password     
