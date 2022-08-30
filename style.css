@@ -25,6 +25,9 @@ body {
   display: flex;
   justify-content: flex-end;
 } */
+/* #outer-div {
+  position: relative;
+} */
 #heading {
   position: fixed;
   top: 20px;
